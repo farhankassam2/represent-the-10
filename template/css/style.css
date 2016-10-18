@@ -1,4 +1,8 @@
+/*Import of Montserrat from Google Font*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
 	background-color:black;
 	color:white;
+	font-family: "Montserrat", san-serif;
 }
