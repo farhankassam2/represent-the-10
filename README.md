@@ -19,11 +19,11 @@ Using pure **Javascript**, **HTML5**, **CSS3** with the following libraries:
 
 ## File structure
 
-**App** (root folder for all project files)
+**app** (root folder for all project files)
 
   `|--> index.html (website landing page)`
 
-  |-- **Html** (folder containing all the .html files)
+  |-- **html** (folder containing all the .html files)
   
       |--> <SOMETHING>.html files (one per page, contains page specific html)
     
@@ -33,13 +33,13 @@ Using pure **Javascript**, **HTML5**, **CSS3** with the following libraries:
       
       |--> <SOMETHING>.html files (one per object (navbar))
       
-  |-- **Css** (folder containing all the .css files)
+  |-- **css** (folder containing all the .css files)
   
       |--> default.css (default css styles for all pages)
     
       |--> <SOMETHING>.css files (one per page, contains page specific markup)
     
-  |-- **Js** (folder containing all the .js files)
+  |-- **js** (folder containing all the .js files)
   
       |--> <SOMETHING>.js files (one per functionality)
 
