@@ -13,9 +13,21 @@ The website has two main functionalities:
 Using pure **Javascript**, **HTML5**, **CSS3** with the following libraries:
 
 
-**Bootstrap** `version ???`
+**Bootstrap.js** `version 3.3.6`
 
-**JQuery** `version ???`
+**JQuery.js** `version 1.12.4`
+
+**Handlebars.js** `version ???`
+
+## Browser Support
+
+Chrome `???`
+
+Firefox `???`
+
+IE `10+`
+
+Safari `???`
 
 ## File structure
 
@@ -33,6 +45,10 @@ Using pure **Javascript**, **HTML5**, **CSS3** with the following libraries:
       
       |--> <SOMETHING>.html files (one per object (navbar))
       
+  |-- **img** (folder containing all the images)
+  
+      |--> <PAGE_NAME> (one folder per page)
+  
   |-- **css** (folder containing all the .css files)
   
       |--> default.css (default css styles for all pages)
@@ -109,6 +125,12 @@ Go to `file:///C:/<PATH-TO-PROJECT>/represent-the-10/app/index.html` in your bro
 **Global Variable / Constants Names:** UPPERCASE
 
 **Local Variable Names:** camelCase (starting with lower case)
+
+## Creating templates
+
+Templates should be created whenever a chunk of HTML is being re-used multiple times. By creating a template we can extract functionality into a single place and avoid duplicate code.
+
+TODO: how to create templates
 
 ## Found a Bug?
 
