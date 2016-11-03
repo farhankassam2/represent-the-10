@@ -6,7 +6,7 @@ Welcome to the **Represent the 10** project page, created by **Code the Change U
 The website has two main functionalities:
 
 1. Be an educational page about the deaf peoples and the deaf communities across Canada. 
-2. Contains a petition to the federal government requesting better acknowledgement of the rights of these peoples and communities.
+2. Contains a signable petition to the federal government requesting better acknowledgement of the rights of these peoples and communities.
 
 ## Framework/Dependencies
 
@@ -17,17 +17,16 @@ Using pure **Javascript**, **HTML5**, **CSS3** with the following libraries:
 
 **JQuery.js** `version 1.12.4`
 
-**Handlebars.js** `version ???`
-
 ## Browser Support
 
-Chrome `???`
+Chrome `Yes`
 
-Firefox `???`
+Firefox `Yes`
+
+Safari `Yes`
 
 IE `10+`
 
-Safari `???`
 
 ## File structure
 
@@ -35,25 +34,15 @@ Safari `???`
 
   `|--> index.html (website landing page)`
 
+  `|--> style.css (style css styles for all pages)`
+
   |-- **html** (folder containing all the .html files)
   
-      |--> <SOMETHING>.html files (one per page, contains page specific html)
-    
-  |-- **templates** (folder containing all the .html templates)
-    
-      |--> default.html (contains default html that every page should contain (meta tags, imports, footer)
-      
-      |--> <SOMETHING>.html files (one per object (navbar))
+      |--> <SOMETHING>.html files (one per page)
       
   |-- **img** (folder containing all the images)
   
       |--> <PAGE_NAME> (one folder per page)
-  
-  |-- **css** (folder containing all the .css files)
-  
-      |--> default.css (default css styles for all pages)
-    
-      |--> <SOMETHING>.css files (one per page, contains page specific markup)
     
   |-- **js** (folder containing all the .js files)
   
@@ -126,11 +115,6 @@ Go to `file:///C:/<PATH-TO-PROJECT>/represent-the-10/app/index.html` in your bro
 
 **Local Variable Names:** camelCase (starting with lower case)
 
-## Creating templates
-
-Templates should be created whenever a chunk of HTML is being re-used multiple times. By creating a template we can extract functionality into a single place and avoid duplicate code.
-
-TODO: how to create templates
 
 ## Found a Bug?
 
