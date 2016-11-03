@@ -6,3 +6,11 @@ body {
 	color:rgb(255,255,255);
 	font-family: "Montserrat", san-serif;
 }
+
+.darkgrey {
+	color: darkgrey;
+}
+
+textarea {
+   resize: none;
+}
