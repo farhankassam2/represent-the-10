@@ -2,7 +2,60 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-	background-color:darkgrey;
+	background-color: white;
 	color:rgb(255,255,255);
-	font-family: "Montserrat", san-serif;
+	font-family: Montserrat, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #b30010;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bolder;
+}
+
+/* ============================================
+================== NAVBAR ==================
+==============================================*/
+.navbar {
+	border-radius: 0;
+	border: 0;
+	background-color: black;
+}
+
+.nav>li {
+	text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #b30010;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: red;
+}
+
+span.glyphicon {
+	font-size: 3.0em;
+}
+
+/* ============================================
+================== CONTENT ==================
+==============================================*/
+
+.content {
+	min-height: 100vh;
+	margin-top: 300px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
