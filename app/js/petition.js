@@ -44,7 +44,33 @@ $(document).ready(function() {
       str = str.replace(" ", "")
       return !(regex.test(str) && (str.length == 6));
     }
-
+    // ID of the Google Spreadsheet
+    var spreadsheetID = "1CtNuBMA4dzxWaSZZ50GtN4993aHfhgqLUDcW00hkm4Y";
+    // Make sure it is public or set to Anyone with link can view
+    var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
+    $.getJSON(url, function(data) {
+      var entry = data.feed.entry;
+      var submittedData = [fname,
+                           lname,
+                           address,
+                           city,
+                           province,
+                           postalcode]
+      for (var i = 0; i < entry.length; i++) {
+        var pastData = [entry[i]["gsx$firstname"]["$t"],
+                        entry[i]["gsx$lastname"]["$t"],
+                        entry[i]["gsx$address"]["$t"],
+                        entry[i]["gsx$city"]["$t"],
+                        entry[i]["gsx$provinceterritory"]["$t"],
+                        entry[i]["gsx$postalcode"]["$t"]];
+        console.log(pastData);
+        console.log(submittedData);
+      }
+        if (pastData == submittedData) {
+          VALID = false;
+          alert("Your submission is a duplicate!");
+        }
+    });
     //Submit form with ajax if valid
     if (VALID) {
       $.ajax({
@@ -107,6 +133,7 @@ $(document).ready(function() {
 })
 
 // We are listening. :)
+/*
          ▒▓
        ▓██░
      ░██    ░██     ░▓█████▓░
@@ -137,3 +164,4 @@ $(document).ready(function() {
                    ██   ░░░░░░   ██░
                      ░██▒       ░▓██
                      ░███▓▓▓▓▓▒░
+*/
