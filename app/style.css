@@ -116,3 +116,36 @@ span.glyphicon {
 	margin-left: 50px;
 	margin-right: 50px;
 }
+
+/* ============================================
+================== PROGRESS BAR ==================
+==============================================*/
+
+#progress-bar {
+	margin-top: 50px;
+}
+
+.progress {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #a8a9a8;
+}
+
+.progress-bar-danger {
+	height: 70%;
+	border-radius: 15px;
+	background-color: #b30010;
+
+	transform: translate(1.5%, 23%);
+}
+
+#progress-info {
+	min-height: 150px;
+}
+
+.progress-info-detailed {
+	display: none;
+}
