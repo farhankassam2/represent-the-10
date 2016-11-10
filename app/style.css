@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
 	border-radius: 0;
 	border: 0;
-	background-color: black;
+	background-color: transparent;
 }
 
 .nav>li {
@@ -47,6 +47,19 @@ h1, h2, h3, h4, h5, h6 {
 
 span.glyphicon {
 	font-size: 3.0em;
+}
+
+#navbar-main {
+	background-color: black;
+}
+
+#navbar-extra {
+	width: 0;
+	height: 0;
+	z-index: 100;
+	border-top: 100px solid black;
+	border-left: 1500px solid transparent;
+	min-height: 100px;
 }
 
 /* ============================================
