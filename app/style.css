@@ -14,6 +14,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bolder;
 }
 
+.trans {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.active {
+	color: #b30010 !important;
+}
+
 /* ============================================
 ================== NAVBAR ==================
 ==============================================*/
@@ -45,21 +56,41 @@ h1, h2, h3, h4, h5, h6 {
 	color: red;
 }
 
+.nav-elem {
+	margin-top: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 span.glyphicon {
 	font-size: 3.0em;
 }
 
-#navbar-main {
-	background-color: black;
+.tilt {
+	-ms-transform: rotate(4deg); /* IE 9 */
+	-webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+	transform: rotate(4deg);
 }
 
-#navbar-extra {
+.navbar-brand {
+	padding-right: 40px;
+}
+
+#navbar-main {
+	background-color: black;
+	min-height: 100px;
+}
+
+#navbar-main::after {
+	content: ' ';
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 	width: 0;
 	height: 0;
-	z-index: 100;
 	border-top: 100px solid black;
-	border-left: 1500px solid transparent;
-	min-height: 100px;
+	border-left: 100vw solid transparent;
 }
 
 /* ============================================
