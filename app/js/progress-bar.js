@@ -21,7 +21,7 @@ $(document).ready(function() {
  returns: NONE
  */
 $('.progress-btn').click(function() {
-    var target = "#" + $(this).attr('id') + "-info";
+    var target = "#"+ $(this).attr('rel');
     $(target).show('slow', function() {
         // Animation complete.
     });
