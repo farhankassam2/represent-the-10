@@ -14,20 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bolder;
 }
 
-.trans {
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.active {
-	color: #b30010 !important;
-}
-
 /* ============================================
 ================== NAVBAR ==================
 ==============================================*/
+
 .navbar {
 	border-radius: 0;
 	border: 0;
@@ -53,13 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-brand:hover {
-	color: red;
+	color: #b30010;
 }
 
 .nav-elem {
 	margin-top: 5px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 200px; /* TODO: Find an alternative to setting a fixed element width */
 }
 
 span.glyphicon {
@@ -72,16 +63,35 @@ span.glyphicon {
 	transform: rotate(4deg);
 }
 
+.trans {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+/* TODO: Spacing for hashtags. Should probably align with bottom of navbar on flatten. */
+/*.hashtag {*/
+	/*line-height: 0.3em;*/
+	/*height: 25px;*/
+	/*padding-top: 0;*/
+/*}*/
+
 .navbar-brand {
 	padding-right: 40px;
 }
 
-#navbar-main {
-	background-color: black;
-	min-height: 100px;
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
 }
 
-#navbar-main::after {
+#myNavbar {
+	background-color: black;
+	min-height: 100px; /* TODO: Find a way to set this to the actual navbar height */
+}
+
+#myNavbar::after {
 	content: ' ';
 	z-index: -1;
 	position: absolute;
@@ -91,6 +101,10 @@ span.glyphicon {
 	height: 0;
 	border-top: 100px solid black;
 	border-left: 100vw solid transparent;
+}
+
+.active {
+	color: #b30010 !important;
 }
 
 /* ============================================

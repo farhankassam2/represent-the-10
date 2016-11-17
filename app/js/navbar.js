@@ -6,14 +6,10 @@
 $(window).scroll(function() {
     if ($(document).scrollTop() > 200) {
         $(".navbar-brand").removeClass("tilt");
-        $('.nav-text').hide('slow', function() {
-            // Animation complete.
-        });
+         $('.nav-text').hide(200);
     } else {
         $(".navbar-brand").addClass("tilt");
-        $('.nav-text').show('slow', function() {
-            // Animation complete.
-        });
+         $('.nav-text').show(200);
     }
 });
 
