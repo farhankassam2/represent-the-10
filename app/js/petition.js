@@ -1,22 +1,27 @@
-$(document).ready(function() {
-  var VALID = true;
-  var SUBMITTEDDATA = [];
-  var PASTDATA = [];
+// Global Variables
+var VALID = true;
+var SUBMITTEDDATA = [];
+var PASTDATA = [];
 
+$(document).ready(function() {
   // ID of the Google Spreadsheet
   var spreadsheetID = "1CtNuBMA4dzxWaSZZ50GtN4993aHfhgqLUDcW00hkm4Y";
   // Make sure url is public or set to Anyone with link can view
   var fullurl = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
   $.getJSON(fullurl, function( data ) {
     var recordedData = data.feed.entry;
-    for (var i = 0; i < recordedData.length; i++) {
-      var pastData = [recordedData[i]["gsx$firstname"]["$t"],
-                      recordedData[i]["gsx$lastname"]["$t"],
-                      recordedData[i]["gsx$address"]["$t"],
-                      recordedData[i]["gsx$city"]["$t"],
-                      recordedData[i]["gsx$provinceterritory"]["$t"],
-                      recordedData[i]["gsx$postalcode"]["$t"]];
-      PASTDATA.push(pastData);
+    if (recordedData) {
+        var temp = PASTDATA;
+        for (var i = 0; i < recordedData.length; i++) {
+        var pastData = [recordedData[i]["gsx$firstname"]["$t"],
+                        recordedData[i]["gsx$lastname"]["$t"],
+                        recordedData[i]["gsx$address"]["$t"],
+                        recordedData[i]["gsx$city"]["$t"],
+                        recordedData[i]["gsx$provinceterritory"]["$t"],
+                        recordedData[i]["gsx$postalcode"]["$t"]];
+        temp.push(pastData);
+      }
+      PASTDATA=temp;
     }
   });
   $("#petitionform").submit(function() {
@@ -68,16 +73,8 @@ $(document).ready(function() {
     }
     function duplicateValidate(arrs, arrp) {
       for (var i = 0; i < arrp.length; i++) {
-        var count = 0;
-        for (var j = 0; j < arrs.length; j++) {
-          if (arrs[j] == arrp[j]) {
-            count++;
-          }
-          //I don't know why, but putting console.log(count++) fixed it....
-          console.log(count++);
-          if (count == 6) {
-            return false;
-          }
+        if (arrp[i][0] == arrs[0] && arrp[i][1] == arrs[1] && arrp[i][2] == arrs[2] && arrp[i][3] == arrs[3] && arrp[i][4] == arrs[4] && arrp[i][5] == arrs[5]) {
+          return false;
         }
       }
       return true;
@@ -85,6 +82,9 @@ $(document).ready(function() {
     //Submit form with ajax if valid
     if (VALID) {
       submitForm();
+    }
+    function newData(arrs, arrp) {
+      return arrp.push(arrs);
     }
     function submitForm() {
         $.ajax({
@@ -99,48 +99,23 @@ $(document).ready(function() {
                   dataType: "xml",
                   statusCode: {
                       0: function (){
-                        //Clearing fields after submission
-                        $("input.darkgrey.form-control.fnm").val("");
-                        $("input.darkgrey.form-control.lnm").val("");
-                        $("input.darkgrey.form-control.address").val("");
-                        $("input.darkgrey.form-control.city").val("");
-                        $("input.darkgrey.form-control.province").val("");
-                        $("input.darkgrey.form-control.postal").val("");
+                        alert("Thank you for signing the petition.")
                       },
                       200: function (){
-                        //Clearing fields after submission
-                        $("input.darkgrey.form-control.fnm").val("");
-                        $("input.darkgrey.form-control.lnm").val("");
-                        $("input.darkgrey.form-control.address").val("");
-                        $("input.darkgrey.form-control.city").val("");
-                        $("input.darkgrey.form-control.province").val("");
-                        $("input.darkgrey.form-control.postal").val("");
+                        alert("Thank you for signing the petition.")
                       },
                       //400 - Bad Request
                       400: function(){
                         alert("There was error within the server. Please try again at later time.");
-                        //Clearing fields after submission
-                        $("input.darkgrey.form-control.fnm").val("");
-                        $("input.darkgrey.form-control.lnm").val("");
-                        $("input.darkgrey.form-control.address").val("");
-                        $("input.darkgrey.form-control.city").val("");
-                        $("input.darkgrey.form-control.province").val("");
-                        $("input.darkgrey.form-control.postal").val("");
                       }
                       ,
                       //404 - Not Found
                       404: function(){
                         alert("There was error with the form. Please try again at later time.");
-                        //Clearing fields after submission
-                        $("input.darkgrey.form-control.fnm").val("");
-                        $("input.darkgrey.form-control.lnm").val("");
-                        $("input.darkgrey.form-control.address").val("");
-                        $("input.darkgrey.form-control.city").val("");
-                        $("input.darkgrey.form-control.province").val("");
-                        $("input.darkgrey.form-control.postal").val("");
                       }
                   }
               });
+        location.reload();
     };
   });
 });
