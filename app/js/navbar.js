@@ -6,10 +6,15 @@
 $(window).scroll(function() {
     if ($(document).scrollTop() > 200) {
         $(".navbar-brand").removeClass("tilt");
-         $('.nav-text').hide(200);
+
+        // Have to delay removing of styling on hashtag to avoid temporary whitespace showing up on scroll
+        $('.nav-text').hide(200, function(){
+            $(".navbar-brand").removeClass("hashtag")
+        });
+
     } else {
-        $(".navbar-brand").addClass("tilt");
-         $('.nav-text').show(200);
+        $(".navbar-brand").addClass("tilt").addClass("hashtag");
+        $('.nav-text').show(200);
     }
 });
 

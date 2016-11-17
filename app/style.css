@@ -70,7 +70,6 @@ span.glyphicon {
 	transition: all 0.2s ease;
 }
 
-/* TODO: Spacing for hashtags. Should probably align with bottom of navbar on flatten. */
 .hashtag {
 	line-height: 0.3em;
 	height: 25px;
