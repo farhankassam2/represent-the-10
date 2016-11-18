@@ -17,10 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================
 ================== NAVBAR ==================
 ==============================================*/
+
 .navbar {
 	border-radius: 0;
 	border: 0;
-	background-color: black;
+	background-color: transparent;
 }
 
 .nav>li {
@@ -42,11 +43,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-brand:hover {
-	color: red;
+	color: #b30010;
+}
+
+.nav-elem {
+	margin-top: 5px;
+	margin-left: 25px;
+	margin-right: 25px;
+	width: 200px; /* TODO: Find an alternative to setting a fixed element width */
 }
 
 span.glyphicon {
 	font-size: 3.0em;
+}
+
+.tilt {
+	-ms-transform: rotate(4deg); /* IE 9 */
+	-webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+	transform: rotate(4deg);
+}
+
+.trans {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.hashtag {
+	line-height: 0.3em;
+	height: 25px;
+	padding-top: 0;
+}
+
+.navbar-brand {
+	padding-right: 40px;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#myNavbar {
+	background-color: black;
+	min-height: 100px; /* TODO: Find a way to set this to the actual navbar height */
+}
+
+#myNavbar::after {
+	content: ' ';
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-top: 100px solid black;
+	border-left: 100vw solid transparent;
+}
+
+.active {
+	color: #b30010 !important;
 }
 
 /* ============================================
