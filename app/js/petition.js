@@ -25,12 +25,12 @@ $(document).ready(function() {
     }
   });
   $("#petitionform").submit(function() {
-    var fname = $("input.darkgrey.form-control.fnm").val();
-    var lname = $("input.darkgrey.form-control.lnm").val();
-    var address = $("input.darkgrey.form-control.address").val();
-    var city = $("input.darkgrey.form-control.city").val();
-    var province = $("input.darkgrey.form-control.province").val();
-    var postalcode = $("input.darkgrey.form-control.postal").val();
+    var fname = $("input.petition-row.form-control.fnm").val();
+    var lname = $("input.petition-row.form-control.lnm").val();
+    var address = $("input.petition-row.form-control.address").val();
+    var city = $("input.petition-row.form-control.city").val();
+    var province = $("input.petition-row.form-control.province").val();
+    var postalcode = $("input.petition-row.form-control.postal").val();
     SUBMITTEDDATA = [fname, lname, address, city, province, postalcode]
 
     // Alerts when input is invalid
@@ -82,9 +82,6 @@ $(document).ready(function() {
     //Submit form with ajax if valid
     if (VALID) {
       submitForm();
-    }
-    function newData(arrs, arrp) {
-      return arrp.push(arrs);
     }
     function submitForm() {
         $.ajax({

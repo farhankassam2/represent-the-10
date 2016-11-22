@@ -6,18 +6,27 @@ body {
 	color:red;
 	font-family: Montserrat, sans-serif;
 }
-
-<<<<<<< HEAD
-.darkgrey {
-	color: darkgrey;
-}
-=======
+=
 h1, h2, h3, h4, h5, h6 {
 	color: #b30010;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-weight: bolder;
 }
+/* ============================================
+=================== FORM ======================
+==============================================*/
+.petition-row {
+	margin-bottom: 10px;
+	color:black !important;
+	border-radius: 0px;
+}
+.form-control { background-color: gray;}
+.form-control::-webkit-input-placeholder { color: black; }
+.form-control:-moz-placeholder { color: black; }
+.form-control::-moz-placeholder { color: black; }
+.form-control:-ms-input-placeholder { color: black; }
+
 
 /* ============================================
 ================== NAVBAR ==================
