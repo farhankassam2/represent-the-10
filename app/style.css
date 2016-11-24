@@ -6,7 +6,7 @@ body {
 	color:red;
 	font-family: Montserrat, sans-serif;
 }
-========
+
 h1, h2, h3, h4, h5, h6 {
 	color: #b30010;
 	margin-top: 5px;
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:-moz-placeholder { color: black; }
 .form-control::-moz-placeholder { color: black; }
 .form-control:-ms-input-placeholder { color: black; }
-
+.whysign { color: black; margin-bottom:15px; }
 
 /* ============================================
 ================== NAVBAR ==================
@@ -130,4 +130,3 @@ span.glyphicon {
 	margin-left: 50px;
 	margin-right: 50px;
 }
->>>>>>> master
