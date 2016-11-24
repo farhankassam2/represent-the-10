@@ -21,9 +21,8 @@
 </head>
 
 <body>
-	<!--TODO: make link to the page we're on stay red-->
-	<!--TODO: vertical/horizontal spacing on links-->
 	<!--TODO: insert proper home image-->
+	<!--TODO: Either make new mobile only navbar or make this collapse properly on mobile (on hold until get proper mobile design)-->
 	<!--Navbar at top of page-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
@@ -39,36 +38,49 @@
 
 			<!--Navbar content-->
 			<div class="collapse navbar-collapse" id="myNavbar">
+
+				<!--Buttons and icons-->
 				<ul class="nav navbar-nav">
-					<li>
+					<li class="nav-elem">
 						<a href="info.html">
 							<span class="glyphicon glyphicon-question-sign"></span>
-							<p>ABOUT/&Agrave; PROPOS</p>
+							<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
 						</a>
 					</li>
-					<li>
+					<li class="nav-elem">
+						<a href="info.html">
+							<span class="glyphicon glyphicon-question-sign"></span>
+							<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
+						</a>
+					</li>
+					<li class="nav-elem">
 						<a href="petition.html">
 							<span class="glyphicon glyphicon-pencil"></span>
-							<p>PETITION/P&Eacute;TITION</p>
+							<p class="nav-text">PETITION/P&Eacute;TITION</p>
 						</a>
 					</li>
-					<li>
+					<li class="nav-elem">
 						<a href="contact.html">
 							<span class="glyphicon glyphicon-envelope"></span>
-							<p>CONTACT/CONTACT</p>
+							<p class="nav-text">CONTACT/CONTACT</p>
 						</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<img src="../favicon.png" alt="LOGO" height="100" width="100">
-						<br>
-						<a class="navbar-brand" href="../index.html">#REPRESENTTHE10</a>
-						<br>
-						<a class="navbar-brand" href="../index.html">#REPR&Eacute;SENTERLES10</a>
+						<div class="row nav-text">
+							<img src="../img/Temp.PNG" alt="LOGO" height="150" width="200">
+						</div>
+						<div class="row">
+							<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPRESENTTHE10</a>
+						</div>
+						<div class="row">
+							<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPR&Eacute;SENTERLES10</a>
+						</div>
 					<li>
 				</ul>
 			</div>
+
 		</div>
 	</nav>
 
@@ -154,6 +166,7 @@
 	<!--Javascript Imports-->
 	<script src="../js/scripts.js"></script>
 	<script src="../js/petition.js"></script>
+	<script src="../js/navbar.js"></script>
 
 </body>
 </html>
