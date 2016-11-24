@@ -111,17 +111,69 @@
 			</div>
 
 		</div>
-
+		<!--Start of Petition Form-->
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<h4 class="whysign">Sign this petition to support the creation of the Ministry of d/Deaf Affairs.</h4>
+			<h4 class="whysign">Sign this petition to ensure sign languages have equal rights across Canada.</h4>
+			<h4 class="whysign">Sign this petition to help stop human rights violations against Deaf Canadians.</h4>
+			<h4 class="whysign">Sign this petition to make the Canadian government accountable for past wrongs against d/Deaf.</h4>
+			<h4 class="whysign">Sign this petition to ensure Deaf Canadians are given equal access to education.</h4>
+			<h4 class="whysign">Sign this petition to give d/Deaf Canadians a place within our government.</h4>
+			<h4 class="whysign">Sign this petition to offer a central place of advocacy by and for d/Deaf Canadians.</h4>
+			<h4 class="whysign">Sign this petition to accrue proper data on Deaf Canadians for the first time in history.</h4>
+		<form id="petitionform" style="color:black;">
+			<h3 style="color:black;">Sign the Petition!</h3>
+			<div class="petitionrequired">* Required</div>
+				<br>
+			<div class="row">
+				<!--First Name-->
+				<div class="col-md-6">
+					<div class="petitionfn">
+						<input placeholder="FIRST NAME/PRÉNOM*" type="text" class="petition-row form-control fnm" required>
+					</div>
+				</div>
+				<!--Last Name-->
+				<div class="col-md-6">
+					<input placeholder="LAST NAME/NOM DE FAMILLE*" type="text" class="petition-row form-control lnm" required>
+				</div>
+			</div>
+			<div class="row">
+				<!--Address-->
+				<div class="col-md-12">
+					<input placeholder="ADDRESS/ADRESSE*" type="text" class="petition-row form-control address" required>
+				</div>
+			</div>
+			<div class="row">
+			<!--City-->
+			<div class="col-md-3">
+				<input placeholder="CITY/VILLE*" type="text" class="petition-row form-control city" required>
+			</div>
+			<!--Province/Territory-->
+			<div class="col-md-5">
+				<input placeholder="PROVINCE*" type="text" class="petition-row form-control province" required>
+			</div>
+			<!--Postal Code-->
+			<div class="col-md-4">
+				<input placeholder="POSTAL CODE*" type="text" class="petition-row form-control postal" required>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-danger btn-block">Submit/Soumettre</button>
+		</form>
 	</div>
-
-
-	<h3>Petition Page!</h3>
-
+	</div>
+	</div>
+	<!--End of Petition Form-->
+	</div>
+<br>
+<br>
 	<!--jQuery Import-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!--Javascript Imports-->
 	<script src="../js/scripts.js"></script>
+	<script src="../js/petition.js"></script>
 	<script src="../js/navbar.js"></script>
 
 </body>
