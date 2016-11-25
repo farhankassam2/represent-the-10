@@ -7,7 +7,7 @@
 	<meta name="author" content="UBC CTC">
 
 	<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<![endif]-->
 
 	<!--Favicon-->
@@ -21,142 +21,184 @@
 </head>
 
 <body>
-	<!--TODO: insert proper home image-->
-	<!--TODO: Either make new mobile only navbar or make this collapse properly on mobile (on hold until get proper mobile design)-->
-	<!--Navbar at top of page-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
 
-			<!--Collapsed button for mobile-->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
+<!--TODO: insert proper home image-->
+<!--TODO: Either make new mobile only navbar or make this collapse properly on mobile (on hold until get proper mobile design)-->
+<!--Navbar at top of page-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
 
-			<!--Navbar content-->
-			<div class="collapse navbar-collapse" id="myNavbar">
-
-				<!--Buttons and icons-->
-				<ul class="nav navbar-nav">
-					<li class="nav-elem">
-						<a href="info.html">
-							<span class="glyphicon glyphicon-question-sign"></span>
-							<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
-						</a>
-					</li>
-					<li class="nav-elem">
-						<a href="info.html">
-							<span class="glyphicon glyphicon-question-sign"></span>
-							<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
-						</a>
-					</li>
-					<li class="nav-elem">
-						<a href="petition.html">
-							<span class="glyphicon glyphicon-pencil"></span>
-							<p class="nav-text">PETITION/P&Eacute;TITION</p>
-						</a>
-					</li>
-					<li class="nav-elem">
-						<a href="contact.html">
-							<span class="glyphicon glyphicon-envelope"></span>
-							<p class="nav-text">CONTACT/CONTACT</p>
-						</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<div class="row nav-text">
-							<img src="../img/Temp.PNG" alt="LOGO" height="150" width="200">
-						</div>
-						<div class="row">
-							<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPRESENTTHE10</a>
-						</div>
-						<div class="row">
-							<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPR&Eacute;SENTERLES10</a>
-						</div>
-					<li>
-				</ul>
-			</div>
-
-		</div>
-	</nav>
-
-	<!--TODO: make proper margins (margin-top based on navbar height)-->
-	<!--Petition page content-->
-	<div class="content">
-		<h1>PETITION</h1>
-		<h1>P&Eacute;TITION</h1>
-
-		<div id="progress-bar">
-			<div class="progress">
-				<div id="progress-bar-content" class="progress-bar progress-bar-danger" role="progressbar"
-						 aria-valuemin="0" aria-valuemax="100">
-				</div>
-			</div>
+		<!--Collapsed button for mobile-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 		</div>
 
-		<div id="progress-info">
-			<div id="progress-buttons">
-				<button type="button" rel="progress1-info" class="progress-btn btn btn-danger">progress 1</button>
-				<button type="button" rel="progress2-info" class="progress-btn btn btn-danger">progress 2</button>
-				<button type="button" rel="progress3-info" class="progress-btn btn btn-danger">progress 3</button>
-				<button type="button" rel="progress4-info" class="progress-btn btn btn-danger">progress 4</button>
-			</div>
+		<!--Navbar content-->
+		<div class="collapse navbar-collapse" id="myNavbar">
 
-			<div id="progress-content">
-				<div id="progress1-info" class="progress-info-detailed">
-					<h3>progress 1</h3>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-				</div>
-
-				<div id="progress2-info" class="progress-info-detailed">
-					<h3>progress 2</h3>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-				</div>
-
-				<div id="progress3-info" class="progress-info-detailed">
-					<h3>progress 3</h3>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-				</div>
-
-				<div id="progress4-info" class="progress-info-detailed">
-					<h3>progress 4</h3>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-				</div>
-			</div>
-		</div>
-
-		<div id="petition-info">
-			<div id="petition-buttons">
-				<!--TODO: petition buttons-->
-				<br><br>
-				<h1>PETITION BUTTONS HERE</h1>
-			</div>
-
-			<div id="petition-content">
-				<!--TODO: petition content-->
-				<br>
-				<h3>PETITION CONTENT HERE</h3>
-				<br><br>
-			</div>
-
+			<!--Buttons and icons-->
+			<ul class="nav navbar-nav">
+				<li class="nav-elem">
+					<a href="info.html">
+						<span class="glyphicon glyphicon-question-sign"></span>
+						<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
+					</a>
+				</li>
+				<li class="nav-elem">
+					<a href="info.html">
+						<span class="glyphicon glyphicon-question-sign"></span>
+						<p class="nav-text">ABOUT/&Agrave; PROPOS</p>
+					</a>
+				</li>
+				<li class="nav-elem">
+					<a href="petition.html">
+						<span class="glyphicon glyphicon-pencil"></span>
+						<p class="nav-text">PETITION/P&Eacute;TITION</p>
+					</a>
+				</li>
+				<li class="nav-elem">
+					<a href="contact.html">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<p class="nav-text">CONTACT/CONTACT</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="row nav-text">
+						<img src="../img/Temp.PNG" alt="LOGO" height="150" width="200">
+					</div>
+					<div class="row">
+						<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPRESENTTHE10</a>
+					</div>
+					<div class="row">
+						<a class="navbar-brand tilt trans hashtag" href="../index.html">#REPR&Eacute;SENTERLES10</a>
+					</div>
+				<li>
+			</ul>
 		</div>
 
 	</div>
+</nav>
 
+<!--TODO: make proper margins (margin-top based on navbar height)-->
+<!--Petition page content-->
+<div class="content">
+	<h1>PETITION</h1>
+	<h1>P&Eacute;TITION</h1>
 
-	<h3>Petition Page!</h3>
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
 
-	<!--jQuery Import-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<div id="progress-bar">
+				<div class="progress">
+					<div id="progress-bar-content" class="progress-bar progress-bar-danger" role="progressbar"
+							 aria-valuemin="0" aria-valuemax="100">
+					</div>
+				</div>
+			</div>
 
-	<!--Javascript Imports-->
-	<script src="../js/scripts.js"></script>
-	<script src="../js/navbar.js"></script>
-	<script src="../js/progress-bar.js"></script>
+			<div id="progress-info">
+				<div id="progress-buttons">
+					<button type="button" rel="progress1-info" class="progress-btn btn btn-danger">progress 1</button>
+					<button type="button" rel="progress2-info" class="progress-btn btn btn-danger">progress 2</button>
+					<button type="button" rel="progress3-info" class="progress-btn btn btn-danger">progress 3</button>
+					<button type="button" rel="progress4-info" class="progress-btn btn btn-danger">progress 4</button>
+				</div>
+
+				<div id="progress-content">
+					<div id="progress1-info" class="progress-info-detailed">
+						<h3>progress 1</h3>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+					</div>
+
+					<div id="progress2-info" class="progress-info-detailed">
+						<h3>progress 2</h3>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+					</div>
+
+					<div id="progress3-info" class="progress-info-detailed">
+						<h3>progress 3</h3>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+					</div>
+
+					<div id="progress4-info" class="progress-info-detailed">
+						<h3>progress 4</h3>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+					</div>
+				</div>
+			</div>
+
+			<div id="petition-info">
+				<div id="petition-buttons">
+					<!--TODO: petition buttons-->
+					<br><br>
+					<h1>PETITION BUTTONS HERE</h1>
+				</div>
+
+				<div id="petition-content">
+					<!--TODO: petition content-->
+					<br>
+					<h3>PETITION CONTENT HERE</h3>
+					<br><br>
+				</div>
+
+			</div>
+			<!--Start of Petition Form-->
+			<form id="petitionform" style="color:black;">
+				<h3 style="color:black;">Sign the Petition!</h3>
+				<div class="petitionrequired">* Required</div>
+				<br>
+				<div class="row">
+					<!--First Name-->
+					<div class="col-md-6">
+						<div class="petitionfn">
+							<input placeholder="FIRST NAME/PRÉNOM*" type="text" class="petition-row form-control fnm" required>
+						</div>
+					</div>
+					<!--Last Name-->
+					<div class="col-md-6">
+						<input placeholder="LAST NAME/NOM DE FAMILLE*" type="text" class="petition-row form-control lnm" required>
+					</div>
+				</div>
+				<div class="row">
+					<!--Address-->
+					<div class="col-md-12">
+						<input placeholder="ADDRESS/ADRESSE*" type="text" class="petition-row form-control address" required>
+					</div>
+				</div>
+				<div class="row">
+					<!--City-->
+					<div class="col-md-3">
+						<input placeholder="CITY/VILLE*" type="text" class="petition-row form-control city" required>
+					</div>
+					<!--Province/Territory-->
+					<div class="col-md-5">
+						<input placeholder="PROVINCE*" type="text" class="petition-row form-control province" required>
+					</div>
+					<!--Postal Code-->
+					<div class="col-md-4">
+						<input placeholder="POSTAL CODE*" type="text" class="petition-row form-control postal" required>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-danger btn-block">Submit/Soumettre</button>
+			</form>
+			<!--End of Petition Form-->
+		</div>
+	</div>
+</div>
+<!--jQuery Import-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--Javascript Imports-->
+<script src="../js/scripts.js"></script>
+<script src="../js/petition.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/progress-bar.js"></script>
 
 </body>
 </html>
