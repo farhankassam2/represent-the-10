@@ -36,17 +36,13 @@ IE `10+`
 
   `|--> style.css (style css styles for all pages)`
 
-  |-- **html** (folder containing all the .html files)
-  
-      |--> <SOMETHING>.html files (one per page)
+  |-- **html** (folder containing all the .html files, one per page)
       
   |-- **img** (folder containing all the images)
   
       |--> <PAGE_NAME> (one folder per page)
     
-  |-- **js** (folder containing all the .js files)
-  
-      |--> <SOMETHING>.js files (one per functionality)
+  |-- **js** (folder containing all the .js files, one per page and one per cross-page functionality. Ex. Navbar)
 
 
 ## Contributors
@@ -60,6 +56,8 @@ IE `10+`
 ### Developers
 
 **Seung Won Lee** - @leesw98
+
+**Farhan Kassam** - @farhankassam2 
 
 
 ## Contributing
