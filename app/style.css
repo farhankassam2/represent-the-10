@@ -137,7 +137,6 @@ span.glyphicon {
 ================== PETITION PAGE ===============
 ==============================================*/
 
-
 /* ================= PROGRESS BAR ===============*/
 
 #progress-bar {
@@ -202,7 +201,7 @@ span.glyphicon {
 
 .petition-btn:focus, .petition-btn:hover {
 	color: black;
-	background-color: darkgrey;
+	background-color: #a8a9a8;
 }
 
 .petition-info-detailed {
