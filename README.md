@@ -49,7 +49,7 @@ IE `10+`
       |--> <SOMETHING>.js files (one per functionality)
 
 
-## Contributors
+## Main Contributors
 
 ### Team Leads
 
@@ -61,6 +61,8 @@ IE `10+`
 
 **Seung Won Lee** - @leesw98
 
+**Farhan Kassam** - @farhankassam2
+
 
 ## Contributing
 
@@ -69,11 +71,11 @@ Coding contributions to be made by members of **Code the Change UBC** only.
 
 When making a **contribution**, make sure to do the following:
 
-1. Assign yourself to a work ticket on the **Trello board** (see slack channel for link)
+1. Assign yourself to an issue
 2. **Make sure** you `git pull` the latest changes to the master branch
 3. Checkout a new branch `git checkout -b [name_of_your_new_branch]` to commit your changes to
 4. Make (and test!) your changes.
-5. `git commit -m"ADD A DETAILED DESCRIPTION OF YOUR CHANGES HERE"` to commit your changes to the branch
+5. `git commit -m "ADD A DETAILED DESCRIPTION OF YOUR CHANGES HERE"` to commit your changes to the branch
 6. `git push origin [name_of_your_new_branch]` to push your changes to the repo
 7. Create a **Pull Request** into the master branch
 8. After approval from **at least one** supervisor (**@tyler310** or **@EWaterman**) merge branch into master.
@@ -123,10 +125,9 @@ To provide **suggestions** or **report bugs**, open an **issue** first to discus
 
 ## Contact
 #### Code the Change UBC
-* Homepage: 
-* e-mail:
+* Homepage: https://codethechangeubc.org/
+* e-mail: codethechangeubc@gmail.com
 * Facebook: https://www.facebook.com/codethechangeubc/
-* Twitter: [@twitterhandle](https://twitter.com/twitterhandle "twitterhandle on twitter")
 
 #### Represent the 10
 * e-mail:
