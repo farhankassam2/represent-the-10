@@ -1,9 +1,53 @@
-// Global Variables
-var VALID = true;
-var SUBMITTEDDATA = [];
-var PASTDATA = [];
 
+/*
+ Gets the number of entries in the petition Google Doc and sets the progress bar as a percentage of the way to complete.
+ input: NONE
+ returns: NONE
+ */
 $(document).ready(function() {
+    var MAXCOUNT = 500;
+
+    // TODO: actually get count here
+    var getCount = 250;
+
+    // Don't have to round to int because using percentage
+    var percentage = (getCount / MAXCOUNT) * 100;
+
+    document.getElementById("progress-bar-content").style.width = percentage + "%";
+});
+
+/*
+ Clicking on one of the progress bar milestones shows details for that milestone and hides the rest.
+ input: NONE
+ returns: NONE
+ */
+$('.progress-btn').click(function() {
+    var target = "#"+ $(this).attr('rel');
+    $(target).show('slow');
+    $(target).siblings("div").hide('slow');
+});
+
+/*
+ Clicking on one of the language buttons shows petition description in that language and hides the rest.
+ input: NONE
+ returns: NONE
+ */
+$(".petition-btn").click(function(){
+    var target = '#' + $(this).attr('rel');
+    $(target).show('slow');
+    $(target).siblings("div").hide('slow');
+});
+
+/*
+ Handles submission and validation of the petition form.
+ input: NONE
+ returns: NONE
+ */
+$(document).ready(function() {
+  var VALID = true;
+  var SUBMITTEDDATA = [];
+  var PASTDATA = [];
+
   // ID of the Google Spreadsheet
   var spreadsheetID = "1CtNuBMA4dzxWaSZZ50GtN4993aHfhgqLUDcW00hkm4Y";
   // Make sure url is public or set to Anyone with link can view

@@ -1,9 +1,34 @@
+/*
+
+==================DIRECTORY===================
+
+			1. GENERAL STUFF
+			- NAVBAR
+
+			2. PETITION PAGE
+			- PROGRESS BAR
+			- PETITION CONTENT
+			- PETITION FORM
+
+==============================================
+
+*/
+
+/* ============================================
+=============== GENERAL STUFF =================
+==============================================*/
+
 /*Import of Montserrat from Google Font*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+.content {
+	min-height: 100vh;
+	margin: 300px 50px 50px;
+}
+
 body {
 	background-color: white;
-	color:red;
+	color:black;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -13,24 +38,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 5px;
 	font-weight: bolder;
 }
-/* ============================================
-=================== FORM ======================
-==============================================*/
-.petition-row {
-	margin-bottom: 10px;
-	color:black !important;
-	border-radius: 0px;
-}
-.form-control { background-color: gray;}
-.form-control::-webkit-input-placeholder { color: black; }
-.form-control:-moz-placeholder { color: black; }
-.form-control::-moz-placeholder { color: black; }
-.form-control:-ms-input-placeholder { color: black; }
-.whysign { color: black; margin-bottom:15px; }
 
-/* ============================================
-================== NAVBAR ==================
-==============================================*/
+h1 {
+	font-size: 3.7em;
+}
+
+/* =============== NAVBAR ================*/
 
 .navbar {
 	border-radius: 0;
@@ -121,12 +134,110 @@ span.glyphicon {
 }
 
 /* ============================================
-================== CONTENT ==================
+================== PETITION PAGE ===============
 ==============================================*/
 
-.content {
-	min-height: 100vh;
-	margin-top: 300px;
-	margin-left: 50px;
-	margin-right: 50px;
+/* ================= PROGRESS BAR ===============*/
+
+#progress-bar {
+	margin-top: 50px;
 }
+
+.progress {
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #a8a9a8;
+}
+
+#inner-progress {
+	height: 70%;
+	width: 98%;
+	margin: 8px 1%;
+}
+
+.progress-bar-danger {
+	border-radius: 25px;
+	background-color: #b30010;
+}
+
+#progress-info {
+	min-height: 150px;
+}
+
+.progress-info-detailed { /* TODO: display eng/fr on page arrival */
+	display: none;
+}
+
+.progress-btn {
+	color: black;
+	background-color: transparent;
+}
+
+/* ============ PETITION CONTENT ===============*/
+
+#petition-info {
+	position: relative;
+	text-align:center;
+}
+
+#petition-buttons {
+	display:inline-block;
+	width: 100%;
+}
+
+.petition-btn {
+	color: white;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	width: 23%;
+	border-radius: 0;
+	background-color: #b30010;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.petition-btn:focus, .petition-btn:hover {
+	color: black;
+	background-color: #a8a9a8;
+}
+
+.petition-info-detailed {
+	margin-top: 35px;
+	text-align: left;
+	font-size: 1.5em;
+	display: none;
+}
+
+.petition-info-detailed p {
+	margin-bottom: 35px;
+}
+
+.petition-info-detailed h4 {
+	color: black;
+	margin-bottom: 35px;
+}
+
+/* ============== PETITION FORM ==================*/
+
+#petitionform {
+	margin-top: 70px;
+}
+
+#petitionform h3{
+	color: black;
+}
+
+.petition-row {
+	margin-bottom: 10px;
+	color:black !important;
+	border-radius: 0;
+}
+
+.form-control { background-color: gray;}
+.form-control::-webkit-input-placeholder { color: black; }
+.form-control:-moz-placeholder { color: black; }
+.form-control::-moz-placeholder { color: black; }
+.form-control:-ms-input-placeholder { color: black; }
