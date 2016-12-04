@@ -5,15 +5,21 @@
  returns: NONE
  */
 $(document).ready(function() {
-    var MAXCOUNT = 500;
+    // ID of the Google Spreadsheet
+    var spreadsheetID = "1CtNuBMA4dzxWaSZZ50GtN4993aHfhgqLUDcW00hkm4Y";
+    // Make sure url is public or set to Anyone with link can view
+    var fullurl = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
+    $.getJSON(fullurl, function( data ) {
+      var recordedData = data.feed.entry;
+      var MAXCOUNT = 500;
+      // Getting the length of the data
+      GETCOUNT = recordedData.length;
 
-    // TODO: actually get count here
-    var getCount = 250;
+      // Don't have to round to int because using percentage
+      var percentage = (GETCOUNT / MAXCOUNT) * 100;
 
-    // Don't have to round to int because using percentage
-    var percentage = (getCount / MAXCOUNT) * 100;
-
-    document.getElementById("progress-bar-content").style.width = percentage + "%";
+      document.getElementById("progress-bar-content").style.width = percentage + "%";
+    });
 });
 
 /*
